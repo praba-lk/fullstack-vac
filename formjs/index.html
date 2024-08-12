@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+    <br><br>
+    
+    
+    <button id ="btn1" onclick="changebg()"> Change</button>
+    
+    
+    
+
+    
+   
+    <script>
+        function change(){
+        var a =Math.floor(Math.random()*100)+150;
+        var b =Math.floor(Math.random()*100)+150;
+        var c =Math.floor(Math.random()*100)+150;
+        return `rgb(${a}, ${b}, ${c})`;
+        }
+        function changebg(){
+            const randoms = change()
+            document.body.style.backgroundColor = randoms
+        }
+        setInterval(changebg, 1000);
+    </script>
+    <style src="style.css"></style>
+</body>
+</html>

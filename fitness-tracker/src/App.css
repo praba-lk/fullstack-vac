@@ -1,0 +1,29 @@
+*{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100dvw;
+  gap: 6px;
+}
+
+h4{
+  color: black;
+}
+
+input{
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 8px;
+  color: black;
+}
+
+p{
+  color: black;
+}
